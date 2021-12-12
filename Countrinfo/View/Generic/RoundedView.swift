@@ -7,14 +7,10 @@
 
 import UIKit
 
-class RoundedImageView: UIImageView {
-    override init(frame: CGRect) {
-        super.init(frame: frame)
-        clipsToBounds = true
-    }
-
+class RoundedView: UIView {
     required init?(coder: NSCoder) {
         super.init(coder: coder)
+        clipsToBounds = true
     }
 
     override func layoutSubviews() {
